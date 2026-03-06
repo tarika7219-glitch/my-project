@@ -1,0 +1,143 @@
+.saved-analyses-header h2 {
+  margin: 0 0 8px;
+  color: #2d3748;
+}
+
+.saved-analyses-header p {
+  margin: 0 0 20px;
+  color: #718096;
+}
+
+.saved-analyses-controls {
+  display: grid;
+  grid-template-columns: minmax(220px, 1fr) 90px 90px 160px 80px;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.saved-control-input,
+.saved-control-select {
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 0.92rem;
+  outline: none;
+  background: #fff;
+}
+
+.saved-control-input:focus,
+.saved-control-select:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.15);
+}
+
+.saved-clear-btn {
+  border: none;
+  border-radius: 8px;
+  background: #e2e8f0;
+  color: #334155;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 10px 12px;
+}
+
+.saved-analyses-empty {
+  background: #f8fafc;
+  color: #64748b;
+  border: 1px dashed #cbd5e1;
+  border-radius: 10px;
+  padding: 18px;
+  text-align: center;
+}
+
+.saved-analyses-list {
+  display: grid;
+  gap: 12px;
+}
+
+.saved-analysis-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  background: #ffffff;
+}
+
+.saved-analysis-main h3 {
+  margin: 0 0 8px;
+  font-size: 1rem;
+  color: #1f2937;
+}
+
+.saved-analysis-meta {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+.saved-analysis-meta span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.saved-analysis-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.saved-load-btn,
+.saved-delete-btn {
+  border: none;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.saved-load-btn {
+  background: #667eea;
+  color: #fff;
+}
+
+.saved-delete-btn {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+@media (max-width: 768px) {
+  .saved-analyses-controls {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .search-input {
+    grid-column: 1 / -1;
+  }
+
+  .saved-control-select {
+    grid-column: 1 / -1;
+  }
+
+  .saved-analysis-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .saved-analysis-actions {
+    width: 100%;
+  }
+
+  .saved-load-btn,
+  .saved-delete-btn {
+    flex: 1;
+    justify-content: center;
+  }
+}

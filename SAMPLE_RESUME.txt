@@ -1,0 +1,53 @@
+SAMPLE RESUME
+
+John Doe
+john.doe@email.com | (555) 123-4567 | LinkedIn.com/in/johndoe | GitHub.com/johndoe
+
+PROFESSIONAL SUMMARY
+Full-stack developer with 5 years of experience in building scalable web applications. Expertise in Python, JavaScript, and modern web frameworks. Strong background in database design and cloud technologies.
+
+TECHNICAL SKILLS
+Languages: Python, JavaScript, HTML, CSS, SQL, Java, C++
+Web Frameworks: React, Django, Flask, Express.js
+Databases: PostgreSQL, MongoDB, MySQL
+DevOps & Tools: Git, Linux, Apache, Nginx
+Cloud Platforms: AWS (EC2, S3), Firebase
+Libraries & Tools: REST APIs, JWT, Stripe API
+
+PROFESSIONAL EXPERIENCE
+
+Senior Developer | Tech Company | Jan 2021 - Present
+- Led development of React-based dashboard serving 10,000+ users
+- Designed and implemented Python backend using Django framework
+- Optimized database queries reducing load time by 40%
+- Mentored junior developers and conducted code reviews
+- Technologies: Python, React, PostgreSQL, AWS
+
+Full-stack Developer | Web Solutions Inc | Jun 2018 - Dec 2020
+- Built responsive web applications using JavaScript and React
+- Developed REST APIs using Flask and Django
+- Managed AWS infrastructure and deployment
+- Implemented automated testing and CI/CD pipelines
+- Technologies: JavaScript, React, Python, Flask, PostgreSQL
+
+Junior Developer | StartUp Co | Jan 2017 - May 2018
+- Developed frontend features using HTML, CSS, JavaScript
+- Created database models using MongoDB
+- Wrote unit tests for critical features
+- Technologies: JavaScript, MongoDB, Node.js, Express.js
+
+EDUCATION
+Bachelor of Science in Computer Science | State University | 2016
+
+CERTIFICATIONS & COURSES
+- AWS Solutions Architect Associate (2022)
+- React Advanced Patterns (2021)
+- Python Data Science Specialization (2020)
+
+PROJECTS
+- E-commerce Platform: Built full-stack platform with 100+ products, payment integration with Stripe
+- Data Analytics Dashboard: Created interactive dashboard using React and Python for real-time analytics
+- Open Source Contributions: Contributed to Django REST Framework and React ecosystem
+
+LANGUAGES
+English (Fluent), Spanish (Intermediate)

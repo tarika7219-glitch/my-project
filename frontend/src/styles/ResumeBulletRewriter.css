@@ -1,0 +1,148 @@
+.rewriter-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  z-index: 1200;
+}
+
+.rewriter-modal {
+  width: min(920px, 100%);
+  max-height: 90vh;
+  overflow-y: auto;
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.rewriter-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: flex-start;
+  margin-bottom: 14px;
+}
+
+.rewriter-header h2 {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.rewriter-header p {
+  margin: 6px 0 0;
+  color: #6b7280;
+}
+
+.rewriter-close {
+  border: none;
+  background: #f3f4f6;
+  border-radius: 8px;
+  padding: 8px 10px;
+  cursor: pointer;
+}
+
+.rewriter-content label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.rewriter-content textarea {
+  width: 100%;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 10px;
+  resize: vertical;
+  font-family: inherit;
+}
+
+.rewriter-note {
+  margin: 8px 0;
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+.rewriter-actions {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.rewriter-actions button {
+  border: none;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-weight: 600;
+  cursor: pointer;
+  background: #2563eb;
+  color: #fff;
+}
+
+.rewriter-actions .copy-btn {
+  background: #0ea5e9;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.rewriter-results {
+  display: grid;
+  gap: 10px;
+}
+
+.rewrite-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 12px;
+  background: #f9fafb;
+}
+
+.rewrite-card p {
+  margin: 0 0 8px;
+  color: #1f2937;
+}
+
+.rewrite-card p:last-child {
+  margin-bottom: 0;
+}
+
+.rewriter-meta {
+  margin-top: 14px;
+  display: grid;
+  gap: 12px;
+}
+
+.keywords-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.keywords-row span {
+  background: #e0f2fe;
+  color: #0c4a6e;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.rewriter-meta ul {
+  margin: 8px 0 0;
+  padding-left: 20px;
+}
+
+@media (max-width: 768px) {
+  .rewriter-modal {
+    padding: 14px;
+  }
+
+  .rewriter-actions {
+    flex-direction: column;
+  }
+}

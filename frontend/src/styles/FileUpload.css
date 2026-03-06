@@ -1,0 +1,146 @@
+.file-upload-container {
+  width: 100%;
+}
+
+.upload-section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.upload-boxes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.upload-box {
+  border: 2px dashed #667eea;
+  border-radius: 10px;
+  padding: 40px 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.05) 0%, rgba(118, 75, 162, 0.05) 100%);
+}
+
+.upload-box:hover {
+  border-color: #764ba2;
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+  transform: translateY(-2px);
+}
+
+.upload-icon {
+  font-size: 3rem;
+  color: #667eea;
+  margin-bottom: 15px;
+  transition: color 0.3s ease;
+}
+
+.upload-box:hover .upload-icon {
+  color: #764ba2;
+}
+
+.upload-box h3 {
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.file-label {
+  display: block;
+  padding: 15px;
+  background: white;
+  border-radius: 8px;
+  color: #667eea;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+}
+
+.file-label:hover {
+  background: #f5f5f5;
+  color: #764ba2;
+}
+
+.file-input {
+  display: none;
+}
+
+.file-name {
+  color: #27ae60;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.file-info {
+  font-size: 0.85rem;
+  color: #999;
+  margin-top: 10px;
+}
+
+.analyze-button {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: white;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.analyze-button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+}
+
+.analyze-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.analyze-button.loading {
+  position: relative;
+  color: transparent;
+}
+
+.analyze-button.loading::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  left: 50%;
+  margin-left: -10px;
+  margin-top: -10px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: white;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .upload-boxes {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .upload-box {
+    padding: 30px 15px;
+  }
+
+  .upload-icon {
+    font-size: 2rem;
+  }
+}

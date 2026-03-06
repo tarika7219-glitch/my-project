@@ -1,0 +1,549 @@
+.analysis-results {
+  width: 100%;
+}
+
+/* Report Header with Download Button */
+.report-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 20px;
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.08) 0%, rgba(118, 75, 162, 0.08) 100%);
+  border-radius: 8px;
+  border-left: 4px solid #667eea;
+}
+
+.report-header h2 {
+  margin: 0;
+  color: #333;
+  font-size: 1.4rem;
+}
+
+.download-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+}
+
+.download-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.download-btn:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.download-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.download-btn svg {
+  font-size: 1.1rem;
+}
+
+/* Header Buttons Container */
+.header-buttons {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+/* Interview Questions Button */
+.interview-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+}
+
+.interview-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.interview-btn:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.interview-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.interview-btn svg {
+  font-size: 1.1rem;
+}
+
+/* Roadmap Button */
+.roadmap-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  background: linear-gradient(135deg, #27ae60 0%, #229954 100%);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(39, 174, 96, 0.3);
+}
+
+.roadmap-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(39, 174, 96, 0.4);
+}
+
+.roadmap-btn:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.roadmap-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.roadmap-btn svg {
+  font-size: 1.1rem;
+}
+
+/* Resume Rewriter Button */
+.rewrite-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(14, 165, 233, 0.3);
+}
+
+.rewrite-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(14, 165, 233, 0.4);
+}
+
+.rewrite-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.rewrite-btn svg {
+  font-size: 1.1rem;
+}
+
+.match-score-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.match-score {
+  text-align: center;
+}
+
+.match-score h2 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.percentage-circle {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.percentage-circle svg {
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+}
+
+.bg-circle {
+  fill: none;
+  stroke: #efefef;
+  stroke-width: 10;
+}
+
+.progress-circle {
+  fill: none;
+  stroke: url(#gradient);
+  stroke-width: 10;
+  stroke-linecap: round;
+  transition: stroke-dasharray 0.3s ease;
+}
+
+.percentage-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #667eea;
+}
+
+/* Resume Improvements Section */
+.improvements-section {
+  margin-top: 40px;
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.08) 0%, rgba(118, 75, 162, 0.08) 100%);
+  border-radius: 12px;
+  padding: 30px;
+  border: 2px solid rgba(102, 126, 234, 0.2);
+}
+
+.improvements-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 3px solid #667eea;
+}
+
+.improvements-icon {
+  font-size: 2rem;
+  color: #667eea;
+  margin-right: 12px;
+}
+
+.improvements-header h2 {
+  color: #333;
+  font-size: 1.6rem;
+  margin: 0;
+}
+
+.improvement-card {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-left: 4px solid #667eea;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.improvement-card h3 {
+  color: #333;
+  font-size: 1.1rem;
+  margin: 0 0 15px 0;
+  font-weight: 600;
+}
+
+.improvement-card.achievements-card {
+  border-left-color: #3498db;
+}
+
+.improvement-card.summary-card {
+  border-left-color: #2ecc71;
+}
+
+.improvement-card.keywords-card {
+  border-left-color: #e74c3c;
+}
+
+.improvement-card.ats-card {
+  border-left-color: #f39c12;
+}
+
+.improvements-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.improvements-list li {
+  color: #555;
+  padding: 10px 0;
+  padding-left: 25px;
+  position: relative;
+  line-height: 1.5;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.improvements-list li:last-child {
+  border-bottom: none;
+}
+
+.improvements-list li:before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: #667eea;
+  font-weight: bold;
+}
+
+.improvement-text {
+  color: #555;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.keywords-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.keyword-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(102, 126, 234, 0.3);
+}
+
+.summary-section {
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.05) 0%, rgba(118, 75, 162, 0.05) 100%);
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  border-left: 4px solid #667eea;
+}
+
+.summary-section h3 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.summary-section p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.skills-card {
+  border-radius: 8px;
+  padding: 20px;
+  border: 2px solid #efefef;
+}
+
+.skills-card.matching {
+  border-left: 4px solid #27ae60;
+  background: rgba(39, 174, 96, 0.05);
+}
+
+.skills-card.missing {
+  border-left: 4px solid #e74c3c;
+  background: rgba(231, 76, 60, 0.05);
+}
+
+.skills-card.to-learn {
+  border-left: 4px solid #f39c12;
+  background: rgba(243, 156, 18, 0.05);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.card-icon {
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+
+.skills-card.matching .card-icon {
+  color: #27ae60;
+}
+
+.skills-card.missing .card-icon {
+  color: #e74c3c;
+}
+
+.skills-card.to-learn .card-icon {
+  color: #f39c12;
+}
+
+.card-header h3 {
+  color: #333;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-tag {
+  display: inline-block;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.matching-tag {
+  background: #27ae60;
+  color: white;
+}
+
+.missing-tag {
+  background: #e74c3c;
+  color: white;
+}
+
+.to-learn-tag {
+  background: #f39c12;
+  color: white;
+}
+
+.priority-skill {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 0;
+}
+
+.priority-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  background: #667eea;
+  color: white;
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 0.9rem;
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .report-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .report-header h2 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+  }
+
+  .header-buttons {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .interview-btn {
+    width: 100%;
+    justify-content: center;
+    padding: 10px 16px;
+    font-size: 0.9rem;
+  }
+
+  .download-btn {
+    width: 100%;
+    justify-content: center;
+    padding: 10px 16px;
+    font-size: 0.9rem;
+  }
+
+  .roadmap-btn {
+    width: 100%;
+    justify-content: center;
+    padding: 10px 16px;
+    font-size: 0.9rem;
+  }
+
+  .rewrite-btn {
+    width: 100%;
+    justify-content: center;
+    padding: 10px 16px;
+    font-size: 0.9rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .percentage-circle {
+    width: 150px;
+    height: 150px;
+  }
+
+  .percentage-text {
+    font-size: 2rem;
+  }
+
+  .improvements-section {
+    padding: 20px;
+    margin-top: 30px;
+  }
+
+  .improvements-header {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+
+  .improvements-icon {
+    margin-bottom: 8px;
+  }
+
+  .improvements-header h2 {
+    font-size: 1.3rem;
+  }
+
+  .improvement-card {
+    padding: 15px;
+    margin-bottom: 12px;
+  }
+
+  .improvement-card h3 {
+    font-size: 1rem;
+    margin-bottom: 12px;
+  }
+
+  .keywords-container {
+    gap: 8px;
+  }
+
+  .keyword-badge {
+    padding: 6px 12px;
+    font-size: 0.85rem;
+  }
+}

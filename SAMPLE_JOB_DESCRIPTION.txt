@@ -1,0 +1,58 @@
+JOB DESCRIPTION
+
+Senior Full-Stack Developer
+
+Company: Innovation Tech Solutions
+Location: San Francisco, CA (Remote Available)
+Salary: $120,000 - $160,000
+
+ABOUT THE ROLE
+We are looking for an experienced Senior Full-Stack Developer to join our engineering team. You'll be responsible for architecting and developing scalable web applications, mentoring junior developers, and collaborating with product teams to deliver high-quality solutions.
+
+REQUIRED SKILLS & EXPERIENCE
+- 5+ years of professional development experience
+- Expert-level proficiency in JavaScript/TypeScript
+- Strong experience with React for frontend development
+- Backend development experience with Python or Node.js
+- Database design and optimization (PostgreSQL, MongoDB, or similar)
+- Experience with AWS and cloud technologies
+- Proficiency in REST API design
+- Strong understanding of software architecture and design patterns
+- Experience with Git and version control
+- Excellent problem-solving and communication skills
+
+TECHNICAL REQUIREMENTS
+- Frontend: React, JavaScript/TypeScript, HTML, CSS, Redux
+- Backend: Python (Django/Flask) or Node.js (Express)
+- Databases: PostgreSQL, MongoDB
+- DevOps: Docker, Kubernetes, CI/CD pipelines
+- Cloud: AWS services (EC2, S3, RDS, Lambda)
+- Tools: Git, Linux, Docker
+
+NICE TO HAVE
+- Experience with Kubernetes and containerization
+- Knowledge of microservices architecture
+- Familiarity with GraphQL
+- Experience with real-time applications (WebSockets)
+- Machine Learning basics
+- Mobile development experience
+
+RESPONSIBILITIES
+- Design and develop full-stack web applications
+- Optimize application performance and scalability
+- Mentor junior developers and conduct code reviews
+- Participate in system architecture decisions
+- Implement best practices for security and testing
+- Collaborate with product and design teams
+- Maintain code quality and documentation
+
+WHAT WE OFFER
+- Competitive salary and equity compensation
+- Health, vision, and dental insurance
+- 401(k) matching
+- Flexible work schedule and remote options
+- Professional development budget
+- Team collaboration and growth opportunities
+
+APPLY NOW
+Submit your resume, portfolio, and GitHub profile to: careers@innovationtech.com

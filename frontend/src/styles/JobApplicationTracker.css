@@ -1,0 +1,138 @@
+.job-tracker-header h2 {
+  margin: 0 0 8px;
+  color: #1f2937;
+}
+
+.job-tracker-header p {
+  margin: 0 0 16px;
+  color: #6b7280;
+}
+
+.job-form {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(160px, 1fr));
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.job-form input,
+.job-form select,
+.job-form textarea {
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 0.92rem;
+  font-family: inherit;
+}
+
+.job-form textarea {
+  grid-column: 1 / -1;
+  resize: vertical;
+}
+
+.job-form button {
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: #fff;
+  padding: 10px 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.job-empty {
+  background: #f8fafc;
+  border: 1px dashed #cbd5e1;
+  border-radius: 10px;
+  padding: 14px;
+  color: #64748b;
+  text-align: center;
+}
+
+.job-list {
+  display: grid;
+  gap: 10px;
+}
+
+.job-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.job-title-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #111827;
+}
+
+.job-company {
+  color: #374151;
+}
+
+.job-meta {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 6px;
+  color: #6b7280;
+  font-size: 0.88rem;
+}
+
+.job-notes {
+  margin: 8px 0 0;
+  color: #374151;
+  font-size: 0.9rem;
+}
+
+.job-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 140px;
+}
+
+.job-actions select {
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.job-delete-btn {
+  border: none;
+  border-radius: 8px;
+  padding: 8px 10px;
+  background: #fee2e2;
+  color: #b91c1c;
+  cursor: pointer;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+@media (max-width: 900px) {
+  .job-form {
+    grid-template-columns: repeat(2, minmax(140px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .job-form {
+    grid-template-columns: 1fr;
+  }
+
+  .job-card {
+    flex-direction: column;
+  }
+
+  .job-actions {
+    min-width: unset;
+    width: 100%;
+  }
+}
